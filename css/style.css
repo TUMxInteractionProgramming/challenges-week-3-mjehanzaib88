@@ -1,145 +1,233 @@
-/* #4 #sweat #external css file */
+  
 
-/* GLOBAL */
+        /* #2 #colorful #palette is:
+          * Background: #F5F5F5 (GREY 100)
+          * Primary Text: black
 
-/* #4 #global styles*/
+          * Primary color: #3F51B5 (INDIGO)
+          * Primary color_text : white
+          * Accent color: #CDDC39 (LIME)
+          * Accent color_text: black
+          */
 
-* {
-    /* #4 use #roboto #font */
-    font-family: 'Roboto', 'Arial', sans-serif;
+        /*global styles */
+        * {
+            /* #2 #font #faces */
+            font-family: 'Arial', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            /* #2 #colorful #background */
+            background-color: #F5F5F5;
+        }
+        
+        
+        /*app bar styles */
+        h1 {
+            /* #2 #colourful #app-bar */
+            background-color: #3F51B5;
+            color: white;
+            height: 24px;
+            line-height: 24px;
+            display: flex;
+            margin: auto;
+            padding: 16px;
+            display: flex;
+            
+        }
+        /*channels list styles */
+        
+        #messages-box{
+            height:83%;
+            overflow: auto;
 
-     /* #4 #sweat take care of #spacing between various elements */
-    margin: 0;
-    padding: 0;
-}
+        }
+        #list{
+            background-color: white;            
+            height:83%;
+            overflow: auto;
+            
+        }
+        /*style of lists */
+        li{
+            list-style-type: none;
+            padding: 16px;
+            height: 16px;
+            border-bottom: 1px solid #F5F5F5;
+        }
+        /*border and color of selected channel */
+        #list li.selected{
+            color: #3F51B5;
+            border-left: 4px solid #3F51B5;
+            
+            
+        }
+        /*tab bar styles */
+        
+        #tab-buttons{
+            background-color: white;
+            
+        }
+        /*tab buttons have 
+        background white
+        text aligned to center
+        text color is black
+        and no border */
 
-body {
-    background-color: #F5F5F5;
-}
+        #tab-buttons{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        #tab-buttons button{
+            background-color: white;
+            text-align: center;
+            color: black;
+            font-size: 13px;
+            border: none;
+            width: 33%;
+            height: 72px;
+            padding: 16px;
+            margin: auto;   
+        }
+           
 
-/* #4 # sweat #uppercase buttons and w3w locations */
-button, strong {
-    text-transform: uppercase;
-}
+        #chat-bar{
+            background-color: white;
+            position: absolute;
+            color: black;
+            bottom: 0%;
+            border: none;
+            width: 100%;
+            height: 72px;
+            margin: auto;
+            
+        }
+        #emojis-button{
+            display: flex;
+            align-self: flex-start;
+            padding: 16px;
+            background-color: white;
+            border: none;
+        }
+        #chat-bar #emojis{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            bottom: 60px;
+            left: 16px;
+            overflow: auto;
+            background-color: white;
+            border: 1px solid black;
+            font-size: 28px;
+            text-align: left;
+            padding: 16px 16px 16px 32px;
+            
+        }
+        /*color and border of selected button(NEW) */
+        #tab-buttons button.selected {
+            border-bottom: 4px solid #3F51B5;
+            color: #3F51B5;
+        }
+        /*messages styles */
 
+        a, button, strong{
+            
+            /* #2 #font capital #letters */
+            text-transform: uppercase;
+        }
+        .message p, .own-message p {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+            padding: 16px;
+            position: relative;
+            
+        }
+        
+        .message h3, .own-message h3 {
+            /* #2 #font #metadata is now medium */
+            font-size: medium;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
 
+        .message em, .own-message em {
+            /* #2 #font #remaining overrides the default italic appearance of em elements*/
+            font-size: larger;
+            font-style: normal;
+        }
+        /*color of linked locations */
+        .message a, .own-message a{
+            color: black;
+        }
+        .message {
+            width: 80%;
+            margin-bottom: 8px;
+            margin-left: 2.5%;
+        }
+        /*own message block */
+        .own-message {
+            width: 80%;
+            margin-bottom: 8px;
+            margin-left: 17.5%;
+        }
+        /*button {*/
+            /* #2 #colourful #plusfive */
+            /*background-color: #CDDC39;*/
+            /*color: black;*/
+            /* #2 #font capital #letters */
+            /*text-transform: uppercase;
+        }*/
+        .message button, .own-message button {
+            /* #2 #colourful #plusfive */
+            background-color: #CDDC39;
+            color: black;
+        }
+        /*to align channel part to left of window */
+        #ChannelsPart{
+            position: absolute;
+            height: 100%;
+            width: 40%;
+            right: 60%;
+        }
+        /*to align chat part to right of window */
+        #ChatPart{
+            position: absolute;
+            height: 100%;
+            width: 60%;
+            left: 40%;
+            
+            
+        }
+        #ChannelsPart h1 img{
+            
+            align-self: center;
+        }
+        #ChatPart h1 img{
+            position: absolute;
+            right:16px;
+        }
+        #list li span{
+            position: absolute;
+            right: 0%;
+        }
+        .message p button, .own-message p button{
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+        }
 
-/* APP BAR */
+     
+        
+        
+        
 
-/* #4 #sweat address both #app-bar s */
-h1 {
-    background-color: #3F51B5;
-    color: white;
-}
+        
+       
+        
 
+        
 
-/* CHANNELS LIST */
-
-/* #4 #sweat #channels */
-ul {
-    /* #3 #channels #list modifies h2 to ul */
-    background-color: white;
-    /* #3 #channels #bullets removed */
-    list-style-type: none;
-}
-
-li {
-    /* #4 #channel #tile geometry */
-    box-sizing: border-box;
-    height: 48px;
-    padding: 16px;
-    font-size: 16px;
-    /* #4 #channel tiles are separated by #lines */
-    border-bottom: 1px solid #F5F5F5;
-}
-
-/* #4 active #channel is #highlighted */
-li.selected {
-    color: #3F51B5;
-    border-left: 4px solid #3F51B5;
-}
-
-li img {
-    /* #4 #middle vertical alignment of icons in the #channels list */
-    vertical-align: middle;
-}
-
-/* TAB BAR */
-
-/* #4 #sweat #tab-bar */
-#tab-bar {
-    /* #3 #tab-bar #container should be white */
-    background-color: white;
-    /* #3 #tab-bar #container has all buttons centered */
-    text-align: center;
-}
-
-/* #4 add styles to #tab-bar #buttons */
-#tab-bar button {
-    background-color: white;
-    border: none;
-    font-size: 13px;
-
-    /* #4 #tab-bar buttons have a width of #one-third of the available space */
-    width: 33%;
-    height: 72px;
-    padding: 16px;
-}
-
-/* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
-#tab-bar button img {
-    display: block;
-    margin: 0 auto 4px auto;
-}
-
-/* #4 the selected #tab-bar #button is #highlighted */
-#tab-bar button.selected {
-    color: #3F51B5;
-    border-bottom: 4px solid #3F51B5;
-}
-
-
-/* MESSAGES */
-/* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
-.message {
-    /* #3 #chat #width*/
-    width: 80%;
-
-    /* #4 align all #messages using #margins */
-    margin-left: 2.5%;
-
-    /* #4 #message distance to next message container*/
-    margin-bottom: 8px;
-}
-
-
-.message h3 {
-    font-size: medium;
-}
-
-.message h3 em {
-    font-size: larger;
-    font-style: normal;
-}
-
-.message h3 a {
-    /* #3 #chat #link color is primary text */
-    color: black;
-}
-
-.message p {
-    background-color: white;
-    padding: 16px;
-}
-
-.message button {
-    background-color: #CDDC39;
-    color: black;
-    text-transform: uppercase;
-}
-
-/* #4 left align own #messages using #margins */
-.message.own {
-    margin-left: 17.5%;
-}
-
+        
+        

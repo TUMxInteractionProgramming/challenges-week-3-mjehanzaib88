@@ -1,175 +1,123 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<!-- #1 #structure #document -->
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+    <!-- #1 #structure #title -->
     <title>chatter|app</title>
 
-    <!-- #4 embed the #roboto #font. This needs to go above your css -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <!-- We need to specify the character encoding, since we use chinese characters -->
+    <meta charset="UTF-8">
 
-    <!-- #4 #sweat out the styles by creating an #external css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- #2 #css #elements -->
+    <link rel="stylesheet" href="css/style.css"/>
 
-    
+
 </head>
+
 <body>
-<!-- #4 #one #page -->
-<div id="channels">
-    <h1>
-        <!-- #3 #channels #moocus the talkative duck-->
-        <img src="http://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus, the chatty duck!" style="height: 56px;">
-        chatter|app
-    </h1>
+<section id = "ChannelsPart">
+<!-- channel area -->
+<!-- #1 #channels #app-bar -->
+<h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus duck" height="56"> chatter|app</h1>
 
-    <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
+<!-- #1 #channels #topics -->
+<div id="list">
     <ul>
-        <li>#Yummy
-            <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
-        </li>
-
-        <!-- #4 #channel is #highlighted -->
-        <li class="selected">
-            #SevenContinents
-            <!-- #3 #channels #favorite this is starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
-        </li>
-        <li>#KillerApp
-            <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
-        </li>
-        <li>#FirstPersonOnMars
-            <!-- #3 #channels #favorite this is starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
-        </li>
-        <li>#Octoberfest
-            <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
-        </li>
+        <li>#Yummy<span><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="20"><img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right"></span></li>
+        <li>#SevenContinents<span><img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star" height="20"><img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right"></span></li>
+        <li>#KillerApp<span><img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star" height="20"><img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right"></span></li>
+        <li>#FirstPersonOnMars<span><img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star" height="20"><img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right"></span></li>
+        <li class="selected">#FantasyPremierLeague<span><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="20"><img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right"></span></li>
+        
     </ul>
-
-    <!-- #3 #tab-bar #container -->
-    <!-- #4 #sweat #tab-bar -->
-    <div id="tab-bar">
-        <!-- #4 #tab-bar selected channel should be #highlighted -->
-        <button class="selected">
-            <!-- #3 #tab-bar #images -->
-            <img src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Bulb">
-            New
-        </button>
-        <button>
-            <!-- #3 #tab-bar #images -->
-            <img src="http://ip.lfe.mw.tum.de/sections/fire.png" alt="Hot">
-            Trending
-        </button>
-        <button>
-            <!-- #3 #tab-bar #images -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="Star">
-            Favorites
-        </button>
-    </div>
 </div>
 
-<!-- #4 #one #page -->
-<div id="chat">
-    <h1>
-        #SevenContinents
-        <small>by
-            <strong>cheeses.yard.applies</strong>
-        </small>
-    </h1>
 
-    <!-- #3 #chat #container -->
-    <!-- #4 assign a #class to all your #messages to address them with css -->
-    <!-- #4 apply a class "own" to your #messages to align them separately with #margins -->
-    <div class="message own">
-        <h3>
-            <!-- #3 #chat #location points to w3w in a new tab -->
-            <a href="http://w3w.co/cheeses.yard.applies" target="_blank">
-                <strong>cheeses.yard.applies</strong>
-            </a>
-            Wed, June 20th, 13:37
-            <em>15 min. left</em>
-        </h3>
-        <p>What's the place you folks call home?</p>
-        <button>+5 min.</button>
-    </div>
+<!-- #1 #channels #buttons -->
+<div id="tab-buttons">
+    <button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb" height="20"><br>New</button> 
+    <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire" height="20"><br>Trending</button> 
+    <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="20"><br>Favorites</button>
+</div>
+</section>
 
-    <!-- #3 #chat #container -->
-    <!-- #4 #messages #class -->
-    <div class="message">
-        <h3>
-            <!-- #3 #chat #location points to w3w in a new tab -->
-            <a href="http://w3w.co/truck.cotton.zone" target="_blank">
-                <strong>truck.cotton.zone</strong>
-            </a>
-            Wed, June 20th, 13:39
-            <em>4 min. left</em>
-        </h3>
-        <p>BRISBANE! Hang loose!</p>
-        <button>+5 min.</button>
-    </div>
+<section id = "ChatPart">
+<!-- chat area -->
 
-    <!-- #3 #chat #container -->
-    <!-- #4 #messages #class -->
-    <div class="message">
-        <h3>
-            <!-- #3 #chat #location points to w3w in a new tab -->
-            <a href="http://w3w.co/thus.best.dishes" target="_blank">
-                <strong>thus.best.dishes</strong>
-            </a>
-            Wed, June 20th, 14:02
-            <em>12 min. left</em>
-        </h3>
-        <p>The big apple.</p>
-        <button>+5 min.</button>
-    </div>
+<!-- #1 #chat #name -->
+<h1>#FantasyPremierLeague
+    <!-- #1 #chat #location is wrapped in small tag-->
+    <small>by
+        <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+        <strong>darling.lion.race</strong>
+    </small><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="20">
+</h1>
+<div id="messages-box">
+<!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="own-message">
+<h3>
+    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+    <strong><a href="https://map.what3words.com/darling.lion.race" target="_blank">darling.lion.race</a></strong>
+    Wed, September 4th, 18:37
+    <!-- #1 #chat #ttl lives inside the metadata -->
+    <em>13 min. left</em>
+</h3>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<p>Which team is favorite to win the league?<button>+5 min.</button></p>
+<!-- #1 #chat #button subsequent to each message -->
 
-    <!-- #3 #chat #container -->
-    <!-- #4 #messages #class -->
-    <div class="message">
-        <h3>
-            <!-- #3 #chat #location points to w3w in a new tab -->
-            <a href="http://w3w.co/driveway.helper.magazine" target="_blank">
-                <strong>driveway.helper.magazine</strong>
-            </a>
-            Wed, June 20th, 14:02
-            <em>7 min. left</em>
-        </h3>
-        <p>Eu sou um Cariocas.</p>
-        <button>+5 min.</button>
-    </div>
+</div>
+<!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message">
+<h3>
+    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+    <strong><a href="https://map.what3words.com/caramel.loyal.shoebox" target="_blank">caramel.loyal.shoebox</a></strong>
+    Wed, September 4th, 18:40
+    <!-- #1 #chat #ttl lives inside the metadata -->
+    <em>9 min. left</em>
+</h3>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<p>Liverpool, they have improved a lot.<button>+5 min.</button></p>
+<!-- #1 #chat #button subsequent to each message -->
 
-    <!-- #3 #chat #container -->
-    <!-- #4 #messages #class -->
-    <div class="message">
-        <h3>
-            <!-- #3 #chat #location points to w3w in a new tab -->
-            <a href="http://w3w.co/escapes.pitch.saucepan" target="_blank">
-                <strong>escapes.pitch.saucepan</strong>
-            </a>
-            Wed, June 20th, 14:07
-            <em>14 min. left</em>
-        </h3>
-        <p>Greetings from the western cape!</p>
-        <button>+5 min.</button>
-    </div>
-
-    <!-- #3 #chat #container -->
-    <!-- #4 #messages #class -->
-    <div class="message">
-        <h3>
-            <!-- #3 #chat #location points to w3w in a new tab -->
-            <a href="http://w3w.co/meanings.identity.pays" target="_blank">
-                <strong>meanings.identity.pays</strong>
-            </a>
-            Wed, June 20th, 04:08
-            <em>15 min. left</em>
-        </h3>
-        <p>北京</p>
-        <button>+5 min.</button>
-    </div>
 </div>
 
+<!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message">
+<h3>
+    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+    <strong><a href="https://map.what3words.com/grocers.ranged.hoofs" target="_blank">grocers.ranged.hoofs</a></strong>
+    Wed, September 4th, 18:42
+    <!-- #1 #chat #ttl lives inside the metadata -->
+    <em>12 min. left</em>
+</h3>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<p>Is there any doubt? Man city, no competition.<button>+5 min.</button></p>
+<!-- #1 #chat #button subsequent to each message -->
+
+</div>
+
+<!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message">
+<h3>
+    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
+    <strong><a href="https://map.what3words.com/clues.invest.deprive" target="_blank">clues.invest.deprive</a></strong>
+    Wed, September 4th, 18:45
+    <!-- #1 #chat #ttl lives inside the metadata -->
+    <em>10 min. left</em>
+</h3>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<p>Chelsea, they are playing good under Sarri.<button>+5 min.</button></p>
+<!-- #1 #chat #button subsequent to each message -->
+
+</div>
+</div>
+<div id="chat-bar"><button id="emojis-button"><img 
+    src="http://ip.lfe.mw.tum.de/sections/smile-o.png" alt="emoji button">
+    </button>
+    <div id="emojis"> &#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605;</div>
+    </div>
+</section>
 </body>
 </html>
